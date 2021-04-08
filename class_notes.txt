@@ -1,0 +1,265 @@
+07-04-2021
+==========
+Note : both Framework and library containes predefined functionalities.
+
+we should follow Rules & Regulations to use Framework
+
+No Need to Follow Rules and Regulations to Use Library
+
+
+
+Differnces Between Angular and ReactJS
+======================================
+
+
+		Angular						ReactJS
+
+
+1) Initial Version of Angular Released			intial version Released in 2013.
+   in 2010.
+
+   Current Version is Angular11				current version is "17.x"
+
+
+
+2) Angular Released by Google				ReactJS Released by Facebook.
+
+
+3) Official Documentaion Available			Official Documentation Available
+   with "angular.io"					with "react.org"
+
+
+4) Angular is the Framework				React is the library
+
+
+
+5) Angular Follows The Real DOM				React Follows The Virtual DOM
+
+
+6) Angular Applications having less performance		React Applications are 10x faster
+   Compared to React.					compared to Angular Applications.
+
+
+
+7) HttpClient used to make the Rest API			no predefined support to make Rest
+   calls						API calls
+
+							need to depende on 3rd party libraries
+
+							"axios"
+
+
+8) RouterModule is the inbuild in Angular,		by default React won't supports
+   used to implement the Single Page Applications	Single Page Applications
+
+							"react-router-dom" library
+
+
+9) Angular Provides the Validations Support		React won't Provides the Validations Support.
+
+
+
+10) NgRX						Redux
+
+							Saga
+
+							Thunk
+
+
+
+
+11) Angular follows the Two way				React follows the one way data binding
+    Data Binding
+
+
+
+
+
+NodeJS
+======
+
+	- NodeJS is the Running Environment to Execute JavaScript Based Servers.
+
+	- By using NodeJS, we can build the Servers.
+
+		Http Server
+
+		TCP Server
+
+	- we will build the Servers by using "JavaScript".
+
+	- NodeJS is the Backend Technology.
+
+
+	- NodeJS plays major Role to build MEAN Stack, MERN Stack and MEVN Stack Applications
+
+
+	M	-      MongoDB
+
+	E       -      ExpressJS
+
+	A	-      Angular11		R	-       ReactJS		V - VueJS
+
+	N 	- 	NodeJS
+
+
+
+08-04-2021
+
+Environmental Setup
+====================
+
+1) download and install NodeJS
+
+    - "npm", "node" and "npx" are the tools present in NodeJS.  
+
+    - "npm" stands for Node Packaging Manager.
+
+    - "npx" stands for nod pckaging runner.
+
+    - "npm" helps to install the React Software.
+
+    - "npx" helps to create the React "Projects".
+
+website : https://nodejs.org/en/download/
+
+file    : node-v14.16.1-x64.msi
+
+
+2) install yarn tool.
+
+
+    yarn is the tool, provided by facebook.
+
+    yarn tool, used to download the 3rd party libraries.
+
+    Ex.
+        axios
+
+        react-router-dom
+
+        redux
+
+        saga
+
+        thunk
+
+        ---
+        ---
+        ---
+
+    - we will install yarn tool by using following command.
+
+   > npm install -g yarn
+
+    "-g" stands for global installation.
+
+
+
+3) install create-react-app
+
+
+    - create-react-app is the tool provided by facebook.
+
+    - create-react-app used to create the react applications.
+
+    - we will install create-react-app tool, by using following command.
+
+    > npm install -g create-react-app
+
+
+4) install Visual Studio Code
+
+
+    - Visual Studio Code is the IDE, provided by microsoft.
+
+    - Visual Studio Code also called as VSCode.
+
+    - VSCode is the open source IDE.
+
+    - VSCode ide used to build the Angular,React,Vue,NodeJS,........
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file    : VSCodeUserSetup-x64-1.55.0.exe
+
+
+                                creating the react application
+
+1) create the react application with the following command.
+
+
+    > npx create-react-app first-app --template typescript
+
+        - where "first-app" is the name of the react application.
+
+
+2) switch to react application
+
+    > cd first-app
+
+3) execute the react application
+
+    > yarn start
+
+    by default react application running on port no.3000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
