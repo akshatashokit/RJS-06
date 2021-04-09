@@ -207,6 +207,126 @@ file    : VSCodeUserSetup-x64-1.55.0.exe
 
 
 
+09-04-2021
+===========
+
+Directory Structure
+
+
+1) node_modules
+
+        - node_modules containes predefined libraries.
+
+        - these libraries helps to execute the react application.
+
+2) public / favicon.ico
+
+        - This is default logo of ReactJS.
+
+3) public / index.html
+
+       - index.html file is the main template.
+
+        - react starts the execution from "index.html" file.
+
+        - main template containes "div" as main DOM Element whose id is "root"
+
+        Ex.
+                <div id="root"></div>
+
+
+
+
+
+4) public/logo192.png
+          logo512.png
+
+
+        - PWA Stands for Progressive Web Apps.
+
+        - Execution of web applications with minimum content without network.
+
+        - above logos helps to implement the PWA in React Envirinment.
+
+
+5) public/manifest.json
+
+        - it is used to configure the mobile applications development.
+
+
+6) public/robots.txt
+
+      - it is used to write the rules and regulations.
+
+
+7) src
+
+     - used to deploy the components.
+
+
+8) src / App.tsx
+         App.css
+         App.test.tsx
+
+        - when ever we create the Project automatically "App" Component is the Default Component.
+
+        - "App.css" file representing style sheet.
+
+        - "App.test.tsx" file representing the test cases file.
+
+9) src / index.tsx
+
+    - This file acting as Registration file.
+
+    - After Deployment of our components, we should register in index.tsx file.
+
+
+10) src / index.css
+
+    - used to define the global styles to Reacy Applications.
+
+
+11) src/logo.svg
+
+    - This is the default svg logo of ReactJS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
