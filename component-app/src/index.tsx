@@ -4,12 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import First from "./First";
-
+import Fullstack from "./Fullstack";
 
 ReactDOM.render(
   <React.StrictMode>
-    <First />
+    <Fullstack />
   </React.StrictMode>,
   document.getElementById('root')
 );

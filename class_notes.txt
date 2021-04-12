@@ -295,65 +295,32 @@ Directory Structure
 
 
 
+                            ***** Component ******
+
+    - simple "typescript" class behaves like "component".
+
+    - components simplifies the "complex" UI.
+
+    - these components are "reusable".
+
+    - we will save the typescript files with ".ts" or ".tsx" extension.
+
+    - we will deploy components in "src" folder.
+
+    - all the components we need to register in "index.tsx" file.
+
+    - "index.tsx" file is the "registration" file.
 
 
+************************************
+component-app 
+            src
+              First.tsx
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              index.tsx
+            public
+                index.html
+*************************************
 
 
 
