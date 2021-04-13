@@ -323,6 +323,133 @@ component-app
 *************************************
 
 
+                                                    state
+    -  "state" is the predefined object.
+
+    - state object, used to represent the "component" data.
+
+    - in general, we will declare state by using interfaces.
+
+
+***********************************************
+state-ex
+       src
+         StateEx1.tsx
+
+         index.tsx
+
+       public
+         index.html
+***********************************************
+
+
+**************************************************
+state-ex
+       src
+         StateEx2.tsx
+
+         index.tsx
+
+       public
+         index.html
+***************************************************
+
+
+                                                props
+    - props is the predefined object.
+
+    - props, used to receive the data from another component.
+
+************************************
+props-app
+        src
+          Component1.tsx
+
+          Component2.tsx
+
+          index.tsx
+        public
+            index.html
+*************************************   
+
+
+*******************************************
+props-app
+        src
+          Parent.tsx     (state)
+
+          Child.tsx      (props)
+*******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
