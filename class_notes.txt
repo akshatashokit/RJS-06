@@ -396,6 +396,37 @@ props-ex1
 
 
 
+                                    child to parent communicaction
+                                    ==============================
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+childtoparent
+            src
+               Parent.tsx
+               Child.tsx
+
+               index.tsx
+            public
+                index.html
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+create the Parent component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
