@@ -509,6 +509,62 @@ create the Parent component
 
 
 
+                                        API Calls
+                                        =========
+
+    - axios is the 3rd party library, used to make the rest api calls.
+
+    - we will download axios module, by using yarn tool.
+
+    > yarn add axios --save
+
+step 1.
+    create the react application
+
+    > npx create-react-app rest-api --template typescript
+
+
+step 2.
+    switch to project
+
+    > cd rest-api
+
+step 3.
+    download axios module
+
+    > yarn add axios --save
+
+
+step 4.
+    create the component.
+
+    GetEx.tsx
+
+
+                    Revision
+                    =========
+state
+=====
+    - component data, technically called as state.
+
+    - state is the predefined "object" in "reactjs".
+
+***************************************
+revision-app
+           src
+             Example1.tsx
+
+             index.tsx
+****************************************
+
+
+
+
+
+
+
+
+
 
 
 
