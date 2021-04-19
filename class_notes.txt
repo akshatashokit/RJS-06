@@ -558,6 +558,146 @@ revision-app
 ****************************************
 
 
+                                            ****** single page applications ******
+
+        - loading "one component" to "another component" without "refreshing" the whole webpage called as "single page application".
+
+        - "navigation" of one component to anorher component in single page applications called as "Routing".
+
+        - "react-router-dom" is the library used to implement the single page applications.
+
+        - we will download "react-router-dom" module by using "yarn" tool.
+
+        > yarn add react-router-dom --save
+
+
+steps to implement the single page applications
+===============================================
+1) create the react application
+
+                   > npx create-react-app spa-app --template typescript
+
+
+2) switch to react application
+
+                  > cd spa-app
+
+
+3) download the react-router-dom module
+
+                > yarn add react-router-dom @types/react-router-dom --save
+
+4) create the child components
+
+**********************************************************
+spa-app
+      src
+        screens
+            HomeScreen.tsx
+
+            ProductScreen.tsx
+
+            CartScreen.tsx
+**********************************************************
+
+
+step 5.
+    create the App Component.
+
+
+            "App" Component behaves like "Parent Component" in "Single Page Applications".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
