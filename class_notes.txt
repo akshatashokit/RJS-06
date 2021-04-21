@@ -624,6 +624,30 @@ spa-demo2
 ####################################################################################################
 
 
+                            Single Page Applications Revision
+
+
+> cd spa-revision-app
+
+> yarn add react-router-dom @types/react-router-dom --save
+
+
+step 1.
+    create the App Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
