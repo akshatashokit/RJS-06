@@ -8,7 +8,7 @@ import SigninScreen from "./screens/SigninScreen";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SigninScreen />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

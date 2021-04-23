@@ -1,17 +1,24 @@
 import React, { Component } from "react";
+import { History,LocationState } from "history";
 
-interface IProps{}
+interface IProps{
+    history:History<LocationState>;
+}
 interface IState{}
 
 
 class SigninScreen extends Component<IProps,IState>{
+
+    uemail = React.createRef<HTMLInputElement>();
+    password = React.createRef<HTMLInputElement>();
+    
     constructor(props:IProps){
         super(props);
     };
 
     myFun = (event:any)=>{
         event.preventDefault();
-        console.log("Hello");
+        this.props.history.push(`/register/${this.uemail.current?.value}/${this.password.current?.value}`);
     };
 
 
@@ -27,12 +34,12 @@ class SigninScreen extends Component<IProps,IState>{
 
                         <div>
                             <label>Email Addreess</label>
-                            <input type="email"></input>
+                            <input type="email" ref={this.uemail}></input>
                         </div>
 
                         <div>
                             <label>Password</label>
-                            <input type="password"></input>
+                            <input type="password" ref={this.password}></input>
                         </div>
 
                         <div>
