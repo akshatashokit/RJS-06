@@ -641,6 +641,58 @@ step 1.
 
 
 
+                                    State Management Ex
+                                    -------------------
+
+1) create the Directory
+
+Ex.
+    reduxEx
+
+2) switch to reduxEx
+
+    > cd reduxEx
+
+3) download the redux library
+
+    > yarn add redux --save
+
+4) create the state menagement application
+
+    Ex.
+        Bank.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
