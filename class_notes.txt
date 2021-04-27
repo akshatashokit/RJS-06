@@ -509,6 +509,9 @@ create the Parent component
 
 
 
+
+
+
                                         API Calls
                                         =========
 
@@ -661,6 +664,63 @@ Ex.
 
     Ex.
         Bank.js
+
+
+
+
+
+
+                                                        Redux Example
+                                                        =============
+
+1) create the directory
+
+    Ex.
+            reduxEx1
+
+2) switch to reduxEx1
+
+    > cd reduxEx1
+
+3) download redux library
+
+        => yarn tool
+
+                > yarn add redux --save
+
+        => npm tool
+
+                > npm install redux --save
+
+        => package.json file
+
+        package.json
+        ============
+        {
+            "name":"AshokIT",
+            "version":1.0.0,
+            "dependencies":{
+                "redux":"latest"
+            }
+        }
+
+4) create the redux application
+
+        Age.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
