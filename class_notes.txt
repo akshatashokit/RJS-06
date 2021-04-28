@@ -709,6 +709,104 @@ Ex.
         Age.js
 
 
+                                        MERN STACK
+                                        ----------
+1) create the mongodb database.
+
+        - MongoDB database is NoSQL database (won't support SQL & PLSQL).
+
+        - MongoDB database supports JSON (won't support tables).
+
+        - MongoDB database is light weight database.
+
+        - MongoDB database supports cloud Environment.
+
+        - MongoDB database provides cloud Environment in the form of a "MongoDB Atlas".
+
+            URL : https://account.mongodb.com/account/login
+
+Comparision
+-----------
+
+SQL DataBases                                               NoSQL DataBases
+--------------                                              ----------------
+
+Ex.
+1)
+    Oracle                                                      MongoDB
+
+    MySQL                                                       CassandraDB
+
+    SQLServer
+
+
+2) tables                                                   collections
+
+
+3) DataBases                                                DataBases
+
+
+4) primary key                                              _id
+
+
+creating the MongoDB Atlas account   (cloud)
+--------------------------------------------
+
+Details
+-------
+DataBase Name : RJS-06
+
+Collection Name : products
+
+password : admin
+
+Connection URL : mongodb+srv://admin:admin@cluster0.hz6xa.mongodb.net/RJS-06?retryWrites=true&w=majority 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
