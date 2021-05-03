@@ -855,101 +855,137 @@ steps to create the "server"
 
 
 
+                                            implement rest api by using nodejs 
+                                            ----------------------------------
 
+download the images   (p1.png to p6.png)
 
+deploy into AWS Server   (cloud images)
 
+store images path into "MongoDB" DataBase
 
+develop the rest api by using "NodeJS"  (GET Request)
 
+test the rest api by using "Postman"
 
 
+Cloud Images path's
+-------------------
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p1.jpg
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p2.jpg
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p3.jpg
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p4.jpg
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p5.jpg
 
+=> https://rjs-06.s3.ap-south-1.amazonaws.com/p6.jpg
 
 
+*****************************************************************************************************************
+database name       :   ecommerce
 
+collection name     :   products
 
+URL : mongodb+srv://admin:admin@cluster0.hz6xa.mongodb.net/ecommerce?retryWrites=true&w=majority
+*****************************************************************************************************************
 
 
+create the folder
 
+Ex.
+    rev_server
 
+switch to rev_server folder
 
+    > cd rev_server
 
+download the node modules
 
+    1) express
+            - express used to develop the rest services
 
+    2) cors
+            - used to enable the ports communicaction
 
+    3) mongodb
+            - used to connect to mongodb database
 
+    4) body-parser
+            - used to receive the data from client application
 
+    > yarn add express cors mongodb body-parser --save
 
+develop the rest api by using nodejs
 
+    server.js
 
 
+start the node server
 
+    > node server
 
+test the rest api by using Postman
 
+    => http://localhost:8080/products
 
 
 
 
+Integrate the Above Rest API Call to ReactJS
+--------------------------------------------
 
+1) create the react application
 
+    > npx create-react-app redux-thunk --template typescript
 
 
 
+2) switch to react application
 
+    > cd redux-thunk
 
+3) download the node modules
 
+       => redux      @types/redux
 
+       => react-redux     @types/react-redux
 
+       => redux-thunk       @types/redux-thunk
 
+       => axios             @types/axios
 
+4) create the modal
 
+    we have following rest api call.
 
+    http://localhost:8080/
+    
+    based on above response, we must create modal object
 
 
+**********************************************
+redux-thunk
+         src
+           modal
+             Product.tsx
+**********************************************
 
+    finally "Product" modal is ready.
 
 
 
+5) create the types
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**************************************************
+redux-thunk
+           src
+              types
+                 ProductActionTypes.tsx
+**************************************************
 
 
 
