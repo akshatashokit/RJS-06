@@ -8,5 +8,5 @@ interface Product{
     "rating":number;
     "image":string;
     "description":string;
-}
+};
 export default Product;

@@ -935,152 +935,108 @@ test the rest api by using Postman
 
 
 
-Integrate the Above Rest API Call to ReactJS
---------------------------------------------
+                                    Redux Integration with Thunk
 
 1) create the react application
 
-    > npx create-react-app redux-thunk --template typescript
+2) add the libraries
+
+3) modal
+
+4) types
+
+5) actions
+
+6) reducer
+
+7) store
+
+8) component
+
+
+step 1.
+    create the react application
+
+    > npx create-react-app redux-app --template typescript
+
+    where "redux-app" is the name of the react application.
+
+
+step 2.
+    switch to react application
+
+    > cd redux-app
+
+
+step 3.
+    download the libraries
+
+        => redux @types/redux
+
+        => react-redux @types/react-redux
+
+        => redux-thunk @types/redux-thunk
+
+        => axios @types/axios
+
+
+        > yarn add redux @types/redux react-redux @types/react-redux redux-thunk @types/redux-thunk axios @types/axios --save
 
 
 
-2) switch to react application
+step 4.
+    create the modal
 
-    > cd redux-thunk
-
-3) download the node modules
-
-       => redux      @types/redux
-
-       => react-redux     @types/react-redux
-
-       => redux-thunk       @types/redux-thunk
-
-       => axios             @types/axios
-
-4) create the modal
-
-    we have following rest api call.
-
-    http://localhost:8080/
-    
-    based on above response, we must create modal object
+    http://localhost:8080/products
 
 
-**********************************************
-redux-thunk
-         src
-           modal
-             Product.tsx
-**********************************************
+    ************************************
+    redux-app
+            modal
+                Product.tsx
+    ************************************
 
-    finally "Product" modal is ready.
+    finally "Product" modal is ready
+
+step 5.
+    create the types  (plan sheet)
 
 
-
-5) create the types
-
-**************************************************
-redux-thunk
-           src
+    ****************************************
+    redux-app
+            src
               types
                  ProductActionTypes.tsx
-**************************************************
+    ****************************************
 
+    finally "ProductsActionTypes" are ready.
 
+        => ProductsLoading
 
+        => ProductsLoadingSuccess
 
+        => ProductsLoadingFail
 
+step 6.
+    implement the actions
 
+    ****************************************
+    redux-app
+           src
+             actions
+               ProductsActions.tsx
+    ***************************************
 
+step 7.
+    create the reducer
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    **************************************
+    redux-app
+            src
+              reducer
+                ProductsReducer.tsx
+    **************************************
 
 
 
