@@ -1034,9 +1034,28 @@ step 7.
     **************************************
     redux-app
             src
-              reducer
+              reducerApp
                 ProductsReducer.tsx
     **************************************
+
+        finally "ProductReducer" is ready
+
+
+step 8.
+    create the store
+
+    index.tsx
+
+step 9.
+    apply the "dispatch" and "subscription" from "" component
+
+
+
+
+
+
+
+    
 
 
 

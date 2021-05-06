@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//dispatch & subscription
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import getProducts from "./actions/ProductsActions";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface IState{}
+
+interface IProps{
+   my_fun : any;
+   response:any;
 }
 
-export default App;
+class App extends Component<IProps,IState>{
+    constructor(props:IProps){
+    
+    super(props);
+  }
+
+  componentDidMount(){
+      this.props.my_fun();
+  };
+
+  render(){
+    
+    const {loading,products,message} = this.props.response;
+    return(
+       <React.Fragment>
+          <h5>{JSON.stringify(loading)}....{JSON.stringify(products)}....{message}</h5>
+       </React.Fragment>
+    )
+  }
+};
+
+//subscription
+const receive = (state:any)=>{
+    return{
+      response : state
+    }
+};
+
+//dispatch
+const send = (dispatch:any)=>{
+    return{
+      my_fun : ()=>{ dispatch(getProducts()) }      
+    }
+}
+
+export default connect(receive,send)(App);
+
