@@ -1053,6 +1053,173 @@ step 9.
 
 
 
+*********************************************
+Thunk (Example)
+*********************************************
+
+URL : https://restcountries.eu/rest/v2/all
+
+
+step 1.
+    create the react application
+
+
+> npx create-react-app countries-app --template typescript
+
+
+step 2.
+    switch to react application
+
+    > cd countries-app
+
+step 3.
+    download node modules
+
+    @redux             @types/redux
+
+    @react-redux       @types/react-redux
+
+    @redux-thunk       @types/redux-thunk
+
+    @axios             @types/axios
+
+
+    > yarn add redux @types/redux react-redux @types/react-redux redux-thunk @types/redux-thunk axios @types/axios --save
+
+
+step 4.
+    create the modal
+
+***************************************************
+countries-app
+            src
+              model
+                Countries.tsx
+***************************************************
+
+    - finally "Country" model is ready.
+
+
+step 5.
+    create the types
+
+**************************************************
+countries-app
+            src
+              types 
+                 CountriesTypes.tsx
+**************************************************
+
+
+    finally "CountriesTypes" ready with following plans.
+
+    1) CountriesLoading
+
+    2) CountriesLoadingSuccess
+
+    3) CountriesLoadingFail
+
+
+step 6.
+    create the actions
+
+*******************************************************
+countries-app
+           src
+            actions
+              ContriesActions.tsx
+*******************************************************
+
+
+step 7.
+    create the reducer
+
+
+********************************************************
+countries-app
+            src
+              reducer
+                CountriesReducer.tsx
+*******************************************************
+
+    finally "CountriesReducer" is ready.
+
+
+step 8.
+    create the store
+
+    index.tsx
+
+step 9.
+    create the App component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
