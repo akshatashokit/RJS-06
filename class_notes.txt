@@ -1154,6 +1154,85 @@ step 9.
     create the App component
 
 
+                                ****** Login Authentication ******
+
+1) create the login_tbl
+
+    database_name : authentication
+
+    table_name    : login_tbl
+
+    connection_url : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/authentication?retryWrites=true&w=majority
+
+
+2) create the login_server directory.
+
+    Ex.
+        login_server
+
+
+3) switch to login_server
+
+    > cd login_server
+
+
+4) download the node modules
+
+    => express
+
+    => mongodb
+
+    => body-parser
+
+    => cors
+
+
+    > yarn add express mongodb body-parer cors --save
+
+
+5) develop the node application
+
+    Ex.
+        server.js
+
+
+6) start the node server
+
+    > node server
+
+
+7) test the rest api call by using "Postman"
+
+    > http://localhost:8080/login  (POST)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
