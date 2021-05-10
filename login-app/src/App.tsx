@@ -1,26 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import loginAction from "./actions/LoginActions";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+interface IState{
 
-export default App;
+};
+
+interface IProps{
+    login_fn:any;
+    login_status:any;
+};
+
+class App extends Component<IProps,IState>{
+    email_ref = React.createRef<HTMLInputElement>();
+    password_ref = React.createRef<HTMLInputElement>();
+
+    constructor(props:IProps){
+        super(props);
+    };
+
+    login = ()=>{
+        const obj = {"email":this.email_ref.current?.value,
+                     "password":this.password_ref.current?.value};
+        this.props.login_fn(obj);         
+    };
+
+
+    render(){
+
+      return(
+        <React.Fragment>
+            <label style={{marginRight:50}}>Email</label>
+            <input type="email" ref={this.email_ref}></input>
+
+            <br></br><br></br>
+            <label style={{marginRight:50}}>Password</label>
+            <input type="password" ref={this.password_ref}></input>
+
+            <br></br><br></br>
+            <button onClick={this.login}>Login</button>
+      
+            <br></br><br></br>
+            {JSON.stringify(this.props.login_status)}
+        </React.Fragment>
+      )
+    };
+};
+
+//subscription
+const receive = (state:any)=>{
+  return{
+     login_status : state
+  }
+};
+
+//dispatch
+const send = (dispatch:any)=>{
+    return{
+      login_fn : (obj:any)=>{ dispatch(loginAction(obj)) }
+    }
+};
+
+export default connect(receive,send)(App);

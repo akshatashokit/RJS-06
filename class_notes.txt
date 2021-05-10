@@ -1206,6 +1206,123 @@ step 9.
     > http://localhost:8080/login  (POST)
 
 
+                                                    **** Thunk Integration ****
+
+1) create the react application
+
+        > npx create-react-app login-app --template typescript
+
+        where "login-app" is the react application.
+
+
+2) switch to react application
+
+    > cd login_app
+
+
+3) download the middleware modules
+
+    > yarn add redux @types/redux react-redux @types/react-redux redux-thunk @types/redux-thunk axios @types/axios --save
+
+
+4) create the model
+
+        ************************************
+        login-app
+                src
+                  model
+                     Login.tsx
+        ************************************
+                where "Login" is the model.
+
+
+5) create the types
+
+        **************************************
+        login-app
+                src
+                  types
+                     LoginTypes.tsx
+        **************************************
+
+        finally "LoginTypes" are ready.
+
+
+6) create the actions
+
+    ********************************************
+    login-app
+            src
+              actions
+                LoginActions.tsx
+    ********************************************
+
+    finally "loginAction" is ready.
+
+
+7) create the reducer
+
+    ************************************************
+    login-app
+           src
+             reducer
+                LoginReducer.tsx
+    ************************************************
+
+    finally "loginReducer" is ready.
+
+8) create the store
+    index.tsx
+
+
+9) create the App component
+    App.tsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
