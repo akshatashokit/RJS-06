@@ -1339,6 +1339,127 @@ step 7.
     create the App component
 
 
+                                    ***** ReactJS with Saga Middleware and axios module *****
+
+1) create the react application
+
+    > npx create-react-app saga-app-axios
+
+        where "saga-app-axios" is the name of the react application
+
+2) switch to react application
+
+    > cd saga-app-axios
+
+3) download the middleware
+
+        => redux
+
+        => react-redux
+
+        => redux-saga
+
+        => axios
+
+
+        > yarn add redux react-redux redux-saga axios --save
+
+4) create the reducer
+
+        *************************************
+        saga-app-axios
+                     src
+                       reducer
+                         reducer.jsx
+        *************************************
+
+            finally "reducer" is ready
+
+
+5) create the saga
+
+        *****************************************
+        saga-app-axios
+                     src
+                       sagas
+                         saga.jsx
+        *****************************************
+
+
+6) create the store, and deploy the reducer, apply the saga middleware, make the availability to App component.
+
+        index.js
+
+
+7) create the App component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
