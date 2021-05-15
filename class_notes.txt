@@ -1395,6 +1395,199 @@ step 7.
 
 
 
+                                            ***** Cloud Deployment (AWS) *****
+
+1) create the react application
+
+    > npx create-react-app deploy-app --template typescript
+
+        where "deploy-app" is the name of the react application.
+
+
+2) switch to react application
+
+    > cd deploy-app
+
+
+3) create the s3 bucket
+
+    where "deploy-app-ashokit" is the name of the bucket.
+
+
+4) enable static web hosting
+
+
+5) edit the bucket policy
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicReadGetObject",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::deploy-app-ashokit/*"
+            }
+        ]
+    }
+
+6) edit the package.json file
+
+        "deploy": "aws s3 cp --recursive ./build s3://deploy-app-ashokit"
+
+        add above entry under "scripts"
+
+
+7) install aws cli
+
+    website : https://aws.amazon.com/cli/
+
+    file    : AWSCLIV2.msi
+
+
+8) run the following commands
+
+    > npm run build
+
+    > npm run deploy
+
+
+                                                    **** Forms ****
+
+Steps to implement the MiniProject
+----------------------------------
+
+    => Code Reusable
+
+    => Material-UI (Rich UI)
+
+    => Thunk Middleware
+
+    => MongoDB (Atlas)
+
+    => MERN Stack Development
+
+    => AWS Deployment
+
+step 1.
+    create the react application
+
+    > npx create-react-app miniproject-app --template typescript
+
+        where "miniproject-app" is the name of the react application.
+
+
+step 2.
+    switch to react application
+
+    > cd miniproject-app
+
+
+step 3.
+    download the libraries
+
+        => axios                    @types/axios
+
+        => redux                    @types/redux
+
+        => react-redux              @types/react-redux
+
+        => redux-thunk              @types/redux-thunk
+
+        website : https://material-ui.com/getting-started/installation/
+
+        => @material-ui/core
+
+        => @material-ui/icons
+
+        CDN'S : 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
